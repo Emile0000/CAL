@@ -188,7 +188,7 @@ int main() {
     for ( count = 0 ; count < 8 - strlen( temp_excess127 ) ; count++ ) binary_excess127[count] = '0' ;
     strcat( binary_excess127, temp_excess127 ) ;
 
-    if ( strcmp( inputString, "0" ) == 0 || strcmp( inputString, "0.0" ) == 0.0 ) cout << "0 00000000 00000000000000000000000";
+    if ( strcmp( inputString, "0" ) == 0 || strcmp( inputString, "0.0" ) == 0.0 ) cout << "0 00000000 00000000000000000000000"; // 暴力解法
     else {
         if ( sign ) cout << "0" << " " << binary_excess127 << " " << binary_mantissa ;
         else cout << "1" << " " << binary_excess127 << " " << binary_mantissa ;
